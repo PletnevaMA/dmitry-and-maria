@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dmitry-and-maria/static/css/main.2228a5a8.css",
+    "main.js": "/dmitry-and-maria/static/js/main.b1e06b25.js",
+    "static/js/787.f9a30627.chunk.js": "/dmitry-and-maria/static/js/787.f9a30627.chunk.js",
+    "static/media/Forum.ttf": "/dmitry-and-maria/static/media/Forum.f30a601a7c9404d77b8e.ttf",
+    "static/media/Lazurski.ttf": "/dmitry-and-maria/static/media/Lazurski.db8a8af6719068a29d95.ttf",
+    "static/media/Denistina.ttf": "/dmitry-and-maria/static/media/Denistina.5267cea436980e4e189b.ttf",
+    "index.html": "/dmitry-and-maria/index.html",
+    "main.2228a5a8.css.map": "/dmitry-and-maria/static/css/main.2228a5a8.css.map",
+    "main.b1e06b25.js.map": "/dmitry-and-maria/static/js/main.b1e06b25.js.map",
+    "787.f9a30627.chunk.js.map": "/dmitry-and-maria/static/js/787.f9a30627.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2228a5a8.css",
+    "static/js/main.b1e06b25.js"
+  ]
+}
