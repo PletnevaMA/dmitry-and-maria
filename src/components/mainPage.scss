@@ -1,4 +1,11 @@
 .main {
+ background: #ced9d6;
+  height: 100vh;
+  overflow-y: auto;
+
+}
+
+.main_start {
   background-image: url('https://static.tildacdn.com/tild3664-6537-4039-a239-306264643738/__1680_800_1.png');
   height: 100vh;
   width: 100%;
@@ -23,7 +30,52 @@
 .text {
   font-family: Forum, serif;
   font-size: 24px;
-  margin-top: 40px;
+  margin-top: 30px;
   opacity: 0;
   animation: invite 1s 1s forwards;
+  text-align: center;
+}
+
+.month {
+  font-family: Denistina, serif;
+  font-size: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.month_container {
+  width: 292px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24px;
+  gap: 16px;
+  position: relative;
+  & :first-child {
+    justify-content: flex-end;
+  }
+}
+
+.week_container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.title {
+  font-family: Denistina, serif;
+  font-size: 84px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.button_location {
+  padding: 10px;
+  background: #3E554F;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  margin-top: 30px;
 }

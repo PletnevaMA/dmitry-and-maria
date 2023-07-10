@@ -5,4 +5,8 @@
     fill: #3E554F;
     stroke: #3E554F;
   }
+
+  @media (max-width: 420px) {
+    width: 80%;
+  }
 }

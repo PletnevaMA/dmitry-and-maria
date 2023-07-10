@@ -8,6 +8,9 @@ import { useInView } from "react-intersection-observer";
 const Title = styled.h2`
   font-size: 148px;
   font-weight: 500;
+  @media (max-width: 860px) {
+    font-size: 62px;
+  }
 `;
 
 const Word = styled(motion.span)`
