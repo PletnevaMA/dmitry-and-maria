@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/dmitry-and-maria/static/css/main.7411c1dc.css",
-    "main.js": "/dmitry-and-maria/static/js/main.fb40a7b8.js",
+    "main.css": "/dmitry-and-maria/static/css/main.0ac195d7.css",
+    "main.js": "/dmitry-and-maria/static/js/main.719df3d1.js",
     "static/js/787.f9a30627.chunk.js": "/dmitry-and-maria/static/js/787.f9a30627.chunk.js",
     "static/media/we.jpg": "/dmitry-and-maria/static/media/we.cadbbad1e6f70c653b47.jpg",
     "static/media/Forum.ttf": "/dmitry-and-maria/static/media/Forum.f30a601a7c9404d77b8e.ttf",
     "static/media/Lazurski.ttf": "/dmitry-and-maria/static/media/Lazurski.db8a8af6719068a29d95.ttf",
     "static/media/Denistina.ttf": "/dmitry-and-maria/static/media/Denistina.5267cea436980e4e189b.ttf",
+    "static/media/divider.svg": "/dmitry-and-maria/static/media/divider.935a3e81fe15dab044bfa7c1ac076e59.svg",
     "index.html": "/dmitry-and-maria/index.html",
     "static/media/location.svg": "/dmitry-and-maria/static/media/location.3b463aa7105e09f23a30bbf3ce0415c7.svg",
     "static/media/gift.svg": "/dmitry-and-maria/static/media/gift.bc1f7938b6bd355960ab461dbaaab07d.svg",
     "static/media/heart.svg": "/dmitry-and-maria/static/media/heart.5acf518be89f6940861076d886e0d98e.svg",
-    "main.7411c1dc.css.map": "/dmitry-and-maria/static/css/main.7411c1dc.css.map",
-    "main.fb40a7b8.js.map": "/dmitry-and-maria/static/js/main.fb40a7b8.js.map",
+    "main.0ac195d7.css.map": "/dmitry-and-maria/static/css/main.0ac195d7.css.map",
+    "main.719df3d1.js.map": "/dmitry-and-maria/static/js/main.719df3d1.js.map",
     "787.f9a30627.chunk.js.map": "/dmitry-and-maria/static/js/787.f9a30627.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7411c1dc.css",
-    "static/js/main.fb40a7b8.js"
+    "static/css/main.0ac195d7.css",
+    "static/js/main.719df3d1.js"
   ]
 }
