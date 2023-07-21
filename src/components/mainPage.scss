@@ -1,38 +1,44 @@
 .main {
- background: #d3d7d5;
+ background: #faf0e6;
   height: 100vh;
   overflow-y: auto;
 }
 
 .main_start {
   background-image: url('https://static.tildacdn.com/tild3664-6537-4039-a239-306264643738/__1680_800_1.png');
+  background-position: left;
   height: 100vh;
   width: 100%;
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1100px) {
+    background-size: auto 70%;
+    background-position: 0% 0%;
+  }
 };
 
-@keyframes invite {
-  from {
-    opacity: 0;
-  }
-  to {
-   opacity: 1;
-  }
-};
+.main_all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
 
 .text {
   font-family: Forum, serif;
   font-size: 24px;
   margin-top: 30px;
-  opacity: 0;
-  animation: invite 1s 1s forwards;
   text-align: center;
+  @media (max-width: 680px) {
+    padding: 24px;
+    font-size: 20px;
+  }
 }
 
 .month {
@@ -68,6 +74,17 @@
   font-size: 84px;
   margin-top: 30px;
   text-align: center;
+  @media (max-width: 680px) {
+    padding: 24px;
+    font-size: 64px;
+  }
+}
+
+.appeal {
+  font-family: Forum, serif;
+  font-size: 48px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .button_location {
@@ -77,11 +94,89 @@
   color: white;
   border: none;
   margin-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  &:hover {
+    background-color: #273632;
+    cursor: pointer;
+  }
+}
+
+.form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 24px;
+  @media (max-width: 680px) {
+    padding: 24px;
+  }
+}
+
+.form-text {
+  font-family: Forum, serif;
+  font-size: 24px;
+  @media (max-width: 680px) {
+    font-size: 20px;
+  }
+}
+
+.form_input {
+  display: block;
+  height: 36px;
+  width: 100%;
+  border-color: transparent;
+  border-bottom: 2px solid #3E554F;
+  background-color: transparent;
+  box-shadow: none;
+  &:focus {
+  border-color: transparent;
+  border-bottom: 2px solid #3E554F;
+  background-color: transparent;
+    box-shadow: none;
+    outline:none;
+  }
+}
+
+.form-control {
+  font-family: Forum, serif;
+  font-size: 24px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  @media (max-width: 680px) {
+    font-size: 20px;
+  }
+}
+
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  color: #3E554F;
+  border: 1px solid grey;
+  &:checked {
+    border: 1px solid #273632;
+    &::before {
+      transform: scale(1);
+    }
+  }
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #3E554F;
+  }
 }
 
 .divider {
-  margin: 40px 0;
-  height: 40px;
-  width: 50%;
+  width: 100%;
+  height: 80px;
+  margin: 50px 0;
 }

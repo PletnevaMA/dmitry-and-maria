@@ -43,19 +43,19 @@ export const CountDown = ({date}) => {
                 <div className="count_container">
                     <div className="count_item">
                         <div className="count_value">{diffDays}</div>
-                        <div>дней</div>
+                        <div className="count_unit">дней</div>
                     </div>
                     <div className="count_item">
                         <div className="count_value">{diffH.toString()}</div>
-                        <div>часов</div>
+                        <div className="count_unit">часов</div>
                     </div>
                     <div className="count_item">
                         <div className="count_value">{diffM.toString()}</div>
-                        <div>минут</div>
+                        <div className="count_unit">минут</div>
                     </div>
                     <div className="count_item">
                         <div className="count_value">{diffS.toString()}</div>
-                        <div>секунд</div>
+                        <div className="count_unit">секунд</div>
                     </div>
             </div>
 

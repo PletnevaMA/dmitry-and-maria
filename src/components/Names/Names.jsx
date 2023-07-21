@@ -8,7 +8,10 @@ import { useInView } from "react-intersection-observer";
 const Title = styled.h2`
   font-size: 148px;
   font-weight: 500;
-  @media (max-width: 860px) {
+  @media (max-width: 1100px) {
+    font-size: 82px;
+  }
+  @media (max-width: 660px) {
     font-size: 62px;
   }
 `;
@@ -21,7 +24,7 @@ const Word = styled(motion.span)`
 
 const Character = styled(motion.span)`
   display: inline-block;
-  margin-right: -0.05em;
+  // margin-right: -0.05em;
 `;
 export const Names = () => {
     const text = ['Дмитрий', 'и Мария'];
@@ -41,10 +44,6 @@ export const Names = () => {
         }
     }, [ctrls, inView]);
 
-    const wordAnimation = {
-        hidden: {},
-        visible: {},
-    };
 
     const characterAnimation = {
         hidden: {
@@ -55,9 +54,8 @@ export const Names = () => {
             opacity: 1,
             // y: `0em`,
             transition: {
-                // delay: 1,
-                duration: 1.5,
-                ease: [0.2, 0.65, 0.3, 0.9],
+                duration: 2.5,
+                ease: [0.1, 0.55, 0.3, 0.9],
             },
         },
     };
@@ -72,10 +70,10 @@ export const Names = () => {
                     key={index}
                     initial="hidden"
                     animate={ctrls}
-                    variants={wordAnimation}
                     transition={{
-                    delayChildren: index * 0.25,
-                    staggerChildren: 0.05,
+                        delay: 3,
+                        delayChildren: index * 0.55,
+                        staggerChildren: 0.1,
                 }}
                     >
                 {word.split("").map((character, index) => {
