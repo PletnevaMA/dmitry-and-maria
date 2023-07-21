@@ -7,6 +7,7 @@ import {ReactComponent as Heart} from "../images/heart.svg";
 import {ReactComponent as Location} from "../images/location.svg";
 import {ReactComponent as Gift} from "../images/gift.svg";
 import {ReactComponent as Divider} from "../images/divider.svg";
+import {ReactComponent as Bus} from "../images/bus.svg";
 import {CountDown} from "./CountDown/CountDown";
 
 
@@ -62,6 +63,18 @@ const textVariants = {
     }
 }
 
+const busVariants = {
+    offscreen: {
+        x: "100%",
+    },
+    onscreen: {
+        x: "0%",
+        transition: {
+            delay: 0.3,
+            duration: 1
+        }
+    }
+}
 
 export const MainPage = () => {
     useEffect(() => {
@@ -210,6 +223,26 @@ export const MainPage = () => {
         </motion.div>
 
         <button className="button_location" onClick={handleClickLocation}>Как добраться?</button>
+
+        <motion.div
+            variants={busVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 1 }}
+            style={{width: '80px', marginLeft: '0px'}}
+        >
+            <Bus style={{marginTop: '30px', width: '86px'}}/>
+        </motion.div>
+
+
+
+        <motion.div variants={textVariants}
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: true, amount: 1 }}
+                    className="text">Не волнуйтесь о том, как добраться на наш праздник! <br/>
+            Всех желающих будет ожидать автобус (место и время сбора сообщим дополнительно).
+        </motion.div>
 
         <CountDown date={new Date('Sat, 6 Sep 2023 15:40:00')}/>
 

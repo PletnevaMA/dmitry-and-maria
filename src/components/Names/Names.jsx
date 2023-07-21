@@ -26,6 +26,21 @@ const Character = styled(motion.span)`
   display: inline-block;
   // margin-right: -0.05em;
 `;
+
+const characterAnimation = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 2.5,
+            ease: [0.17, 0.67, 0.83, 0.67],
+        },
+    },
+};
+
+
 export const Names = () => {
     const text = ['Дмитрий', 'и Мария'];
     const ctrls = useAnimation();
@@ -44,21 +59,6 @@ export const Names = () => {
         }
     }, [ctrls, inView]);
 
-
-    const characterAnimation = {
-        hidden: {
-            opacity: 0,
-            // y: `0.25em`,
-        },
-        visible: {
-            opacity: 1,
-            // y: `0em`,
-            transition: {
-                duration: 2.5,
-                ease: [0.1, 0.55, 0.3, 0.9],
-            },
-        },
-    };
     return (
         <div className="names">
             <Title aria-label={text} role="heading">
