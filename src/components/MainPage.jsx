@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Names} from "./Names/Names";
 import './mainPage.scss';
 import styled from "styled-components";
@@ -77,6 +77,11 @@ const busVariants = {
 }
 
 export const MainPage = () => {
+    const [precense, setPresernce] = useState();
+
+    const handleClick = (e) => {
+        setPresernce(e.target.value)
+    }
     useEffect(() => {
 
         const postData = async (ev) => {
@@ -88,7 +93,7 @@ export const MainPage = () => {
             // собираем данные из элементов формы
             let details = {
                 name: name.value.trim(),
-                presence: presence.value.trim(),
+                presence: precense,
             };
 
             // подготавливаем данные для отправки
@@ -136,7 +141,7 @@ export const MainPage = () => {
             form.removeEventListener('submit', postData);
         };
 
-    }, [])
+    }, [precense])
 
     const handleClickLocation = () => {
         window.open('https://www.google.com/maps/place/%D0%9F%D0%B0%D1%80%D0%BA-%D0%BE%D1%82%D0%B5%D0%BB%D1%8C+%22%D0%90%D1%80%D1%85%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F+%D0%A1%D0%BB%D0%BE%D0%B1%D0%BE%D0%B4%D0%B0%22/@54.4383532,48.6465162,15z/data=!4m2!3m1!1s0x0:0xf65e68174362b6f1?sa=X&ved=2ahUKEwj69oih-52AAxXzEBAIHVH3AggQ_BJ6BAhREAA&ved=2ahUKEwj69oih-52AAxXzEBAIHVH3AggQ_BJ6BAhXEAg');
@@ -286,13 +291,13 @@ export const MainPage = () => {
             <div className="form-text" htmlFor="presence">Планируете ли вы присутствовать на свадьбе?</div>
             <div className="form-text">
                  <label className="form-control">
-                 <input name="presence" className="custom-radio" type="radio" value="yes"/>
+                 <input name="presence" className="custom-radio" type="radio" value="yes" onChange={handleClick}/>
                      Да, с удовольствием!
                  </label>
             </div>
             <div className="form-text">
-                <label className="form-control" htmlFor="no">
-                    <input name="presence" type="radio" value="no"/>
+                <label className="form-control">
+                    <input name="presence" type="radio" value="no" onChange={handleClick}/>
                     К сожалению, не смогу
                 </label>
             </div>
