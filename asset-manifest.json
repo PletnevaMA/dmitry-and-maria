@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dmitry-and-maria/static/css/main.8f270dc6.css",
-    "main.js": "/dmitry-and-maria/static/js/main.b7ff5c59.js",
+    "main.js": "/dmitry-and-maria/static/js/main.3d2f5a28.js",
     "static/js/787.f9a30627.chunk.js": "/dmitry-and-maria/static/js/787.f9a30627.chunk.js",
     "static/media/we.jpg": "/dmitry-and-maria/static/media/we.cadbbad1e6f70c653b47.jpg",
     "static/media/Forum.ttf": "/dmitry-and-maria/static/media/Forum.f30a601a7c9404d77b8e.ttf",
@@ -14,11 +14,11 @@
     "static/media/gift.svg": "/dmitry-and-maria/static/media/gift.bc1f7938b6bd355960ab461dbaaab07d.svg",
     "static/media/heart.svg": "/dmitry-and-maria/static/media/heart.5acf518be89f6940861076d886e0d98e.svg",
     "main.8f270dc6.css.map": "/dmitry-and-maria/static/css/main.8f270dc6.css.map",
-    "main.b7ff5c59.js.map": "/dmitry-and-maria/static/js/main.b7ff5c59.js.map",
+    "main.3d2f5a28.js.map": "/dmitry-and-maria/static/js/main.3d2f5a28.js.map",
     "787.f9a30627.chunk.js.map": "/dmitry-and-maria/static/js/787.f9a30627.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f270dc6.css",
-    "static/js/main.b7ff5c59.js"
+    "static/js/main.3d2f5a28.js"
   ]
 }
