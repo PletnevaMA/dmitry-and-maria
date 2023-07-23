@@ -108,7 +108,6 @@ export const MainPage = () => {
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
                 },
-                mode: "no-cors",
                 body: formBody,
             })
                 .then((res) => res.json())
@@ -117,9 +116,7 @@ export const MainPage = () => {
                 console.log(result);
             if (result?.type === 'success') {
                 name.value = '';
-
                 presence.value = '';
-
                 alert('Спасибо! Данные успешно отправлены.')
             }
         }
