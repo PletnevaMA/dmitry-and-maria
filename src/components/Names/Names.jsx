@@ -13,6 +13,7 @@ const Title = styled.h2`
   }
   @media (max-width: 660px) {
     font-size: 62px;
+
   }
 `;
 

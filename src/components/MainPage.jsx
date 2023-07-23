@@ -147,10 +147,10 @@ export const MainPage = () => {
     return (
         <div className="main">
             <div className="main_start">
-                <div className="text" style={{fontSize: '24px', fontWeight: '700'}}>приглашение на свадьбу</div>
+                <div className="invitation">приглашение на свадьбу</div>
                 <Names/>
-                <div className="text" style={{fontSize: '24px', fontWeight: '700'}}>09.09.2023</div>
-                <FlexCenter style={{marginTop: '60px'}} initial={{ opacity: 0 }} animate={{ y: [0, 20, 0], opacity: 1 }} transition={{ delay: 2, duration: 2, times: [0, 0.5, 1], repeat: Infinity, }}>
+                <div className="date">09.09.2023</div>
+                <FlexCenter className="arrow"  initial={{ opacity: 0 }} animate={{ y: [0, 20, 0], opacity: 1 }} transition={{ delay: 1.5, duration: 4, times: [0, 0.5, 1], repeat: Infinity, }}>
                     <img alt="Dmitry and Maria" width="48px" height="32px" src="https://static.tildacdn.com/tild3764-3337-4432-b961-316366353332/Frame_1123.png"/>
                 </FlexCenter>
             </div>
